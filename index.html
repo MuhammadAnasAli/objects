@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="Male"> Male</label>
+        <input type="radio" id="gen" value="Male" name="gen">
+
+        <label for="Female">Female</label>
+        <input type="radio" id="gen" value="Female" name="gen">
+        <br><br>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+        <br><br>
+        <label for="profession">Profession  </label>
+        <select name="profession" id="profession">
+            <option value="teacher">teacher</option>
+            <option value="student">student</option>
+        </select>
+        <br><br>
+        <label for="Eduction">Eduction  </label>
+        <select name="Eduction" id="eduction">
+            <option value="Matric">Matric</option>
+            <option value="Inter">Inter</option>
+            <option value="Graduate">Graduate</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Save" onclick="saveInfo();">
+
+    </form>
+    <div id="result" style="display: none;">
+        <label for=""></label>
+        <p id="l_name"></p>
+        <br>
+        <label for=""></label>
+        <p id="l_address"></p>
+        <br>
+        <label for=""></label>
+        <p id="l_gender"></p>
+        <br>
+        <label for=""></label>
+        <p id="l_edu"></p>
+        <br>
+        <label for=""></label>
+        <p id="l_prof"></p>
+        <br>
+    </div>
+</body>
+</html>
